@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+body{
+  background-image: url('../images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #674BB0;
+}
+.logo{
+  width: 140px;
+  padding: 2rem 0;
+}
+.container{
+  width: 83%;
+  margin: 0 auto;
+}
+.hero-container{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.hero-content{
+  text-align: center;
+}
+.hero-img{
+  width: 100%;
+}
+.huddle-heading{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.huddle-des{
+  color: rgba(255, 255, 255, 0.747);
+  padding: 2rem 0rem;
+  margin: 0 auto;
+  width: 95%;
+}
+.reg-huddle-btn{
+  padding: 12px 80px;
+  border-radius: 25px;
+  border: 0;
+  color: #6B599F;
+  background-color: white;
+  margin: 2rem 0;
+  transition: all .4s ease-in-out;
+}
+.reg-huddle-btn:hover{
+  background-color: #E980E7;
+  color: white;
+}
+footer{
+  display: flex;
+   justify-content: center;
+   
+}
+.social-links{
+ display: flex;
+ gap: 1.2rem;
+ margin-bottom: 3rem;
+}
+.social-links a{
+  text-decoration: none;
+  background-color: transparent;
+  height: 34px;
+  width: 34px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+.social-links a:hover{
+   color: #FF51C4;
+   border: 1px solid #FF51C4;
+}
+
+@media screen and (min-width: 868px){
+  body{
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 5rem ;
+  }
+  .container{
+    width: 90%;
+  }
+ .logo{
+  width: 250px;
+ }
+ .hero-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8rem;
+ }
+ .hero-content{
+  text-align:start;
+ }
+
+ .huddle-heading{
+  font-size: 3.7rem;
+  width: 90%;
+ }
+ .huddle-des{
+   margin: 0;
+   font-size: 1.4rem;
+   width:87%;
+   padding: 1rem 0;
+ }
+ footer{
+  justify-content: end;
+  padding-right: 7rem;
+ }
+ .reg-huddle-btn{
+  padding: 14px 110px;
+  display:block;
+ }
+
+}
